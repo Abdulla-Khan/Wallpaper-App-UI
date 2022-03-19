@@ -7,7 +7,7 @@ import 'detail_views.dart';
 class HomeView extends StatelessWidget {
   HomeView({Key? key}) : super(key: key);
 
-  List<String> wallpapers = [
+  final List<String> wallpapers = [
     'images/1.jpg',
     'images/2.jpg',
     'images/3.jpg',
@@ -98,7 +98,7 @@ class HomeView extends StatelessWidget {
                             color: Colors.white,
                             size: 15,
                           ),
-                          const SizedBox(width: 5),
+                          SizedBox(width: 5),
                           Text(
                             '8 Photos',
                             style: TextStyle(
@@ -108,7 +108,7 @@ class HomeView extends StatelessWidget {
                         ],
                       ),
                       const SizedBox(height: 10),
-                      Container(
+                      SizedBox(
                         height: size.height * 0.48,
                         child: ListView.builder(
                             itemCount: wallpapers.length,
